@@ -18,18 +18,6 @@ int calc_det(int pA[], int pB[], int pC[]){
 
 int main(){
 	int A[2], B[2], C[2], P[2], detABC, detABP, detACP, detBCP, x, y, p2[2];
-	
-	/*
-	printf("Cordenada X e Y para ponto A: \n");
-	scanf("%d %d", &A[0], &A[1]);
-	printf("Cordenada X e Y para ponto B: \n");
-	scanf("%d %d", &B[0], &B[1]);
-	printf("Cordenada X e Y para ponto C: \n");
-	scanf("%d %d", &C[0], &C[1]);
-	
-	printf("Cordenada X e Y para ponto P: \n");
-	scanf("%d %d", &P[0], &P[1]);
-	*/
 
 	srand((unsigned) time(NULL));
 	
