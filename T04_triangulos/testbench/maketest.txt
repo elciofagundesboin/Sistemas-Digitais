@@ -1,0 +1,12 @@
+set -e
+
+gcc c/create_test.c -o c/a.out
+./c/a.out > input.dat
+
+gcc c/inside_triangle.c -o c/a.out
+./c/a.out < input.dat > output_c.dat
+
+iverilog ../inside_triangle.v
+./a.out
+
+diff output_c.dat output_v.dat
